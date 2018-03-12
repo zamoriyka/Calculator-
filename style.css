@@ -1,0 +1,91 @@
+html {
+    background: #ffffff;
+}
+
+body {
+    font-size: 12px;
+    color: #ffcdd2;
+    font-family: "MV Boli";
+    margin: 0;
+    padding: 5em 0 2em;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.calculator {
+    font-size: 28px;
+    margin: 0 auto;
+    width: 10em;
+    padding: 25px;
+
+}
+
+.calculator:before:after {
+    content: "";
+    display: table;
+}
+
+.calculator:after {
+    clear: both;
+}
+
+.viewer {
+    color: #ffcdd2;
+    float: left;
+    line-height: 3em;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 11em;
+    height: 1em;
+    border: none;
+    background: none;
+    font-size: 23px;
+}
+
+button {
+    border: 0;
+    background: #ffffff;
+    color: #616161;
+    cursor: pointer;
+    float: left;
+    font: inherit;
+    margin: 0.25em;
+    width: 2em;
+    height: 2em;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: #ffebee;
+}
+
+button:active {
+    background-color: #ffebee;
+    transform: translateY(4px);
+    opacity: 0.1;
+    border: none;
+}
+
+[data-ops="plus"]{
+    color: #0FC57C;
+}
+
+[data-ops="minus"]{
+    color: #CF2323;
+}
+
+[data-ops="/"]{
+    color: #6a1b9a;
+}
+
+[data-ops="times"]{
+    color: #fbc02d;
+}
