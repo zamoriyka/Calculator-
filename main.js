@@ -23,7 +23,6 @@ for (var i=0; i<operation.length; i++) {
     var operators = operation[i];
     operators.addEventListener('click', function (e) {
         operations(e.target.textContent);
-
     });
 }
 
@@ -31,7 +30,6 @@ for (var i=0; i<decimalNumber.length; i++) {
     var decimalBtn = decimalNumber[i];
     decimalBtn.addEventListener('click', function (e) {
         decimal(e.target.textContent);
-
     });
 }
 
@@ -39,8 +37,6 @@ for (var i=0; i<result.length; i++) {
     var resultBtn = result[i];
     resultBtn.addEventListener('click', function (e) {
         results(e.target.textContent);
-
-
     });
 }
 
@@ -48,7 +44,6 @@ for (var i=0; i<c.length; i++) {
     var clearBtn = c[i];
     clearBtn.addEventListener('click', function (e) {
         clear(e.srcElement.id);
-
     });
 
 }
@@ -116,9 +111,7 @@ function decimal(dot) {
     }
 
     viewer.value = localDecimalMemory;
-    console.log('click on ' + dot);
-
-    return Math.round (localDecimalMemory * 10) / 10;
+    console.log('click on ' + dot);  
 }
 
 function results(equals){
